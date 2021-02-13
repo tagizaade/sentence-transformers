@@ -138,7 +138,7 @@ class SentenceTransformer(nn.Sequential):
 
     def encode(self, sentences: Union[str, List[str], List[int]],
                batch_size: int = 32,
-               show_progress_bar: bool = None,
+               show_progress_bar: bool = False,
                output_value: str = 'sentence_embedding',
                convert_to_numpy: bool = True,
                convert_to_tensor: bool = False,
